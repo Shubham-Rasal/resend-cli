@@ -1,12 +1,12 @@
 {
   "name": "the-resend-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "CLI for the Resend email API",
   "type": "module",
   "bin": {
     "resend": "dist/main.js"
   },
-  "files": ["dist"],
+  "files": ["dist", "CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "SECURITY.md"],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "test": "vitest run",
