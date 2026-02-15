@@ -189,10 +189,23 @@ Every command returns JSON to stdout. Exit code 0 on success, 1 on error.
 
 ## Installation
 
+### npm (recommended)
+
+```bash
+npm install -g the-resend-cli
+resend --help
+```
+
+Or run without installing:
+
+```bash
+npx the-resend-cli --help
+```
+
 ### From source
 
 ```bash
-git clone https://github.com/yourusername/resend-cli.git
+git clone https://github.com/Shubham-Rasal/resend-cli.git
 cd resend-cli/resend-cli
 pnpm install
 pnpm build
@@ -202,7 +215,7 @@ node dist/main.js --help
 ### Development setup
 
 ```bash
-git clone https://github.com/yourusername/resend-cli.git
+git clone https://github.com/Shubham-Rasal/resend-cli.git
 cd resend-cli/resend-cli
 pnpm install
 npx tsx src/main.ts --help  # No compilation needed

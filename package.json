@@ -1,19 +1,29 @@
 {
-  "name": "resend-cli",
-  "version": "0.1.0",
+  "name": "the-resend-cli",
+  "version": "0.1.1",
   "description": "CLI for the Resend email API",
   "type": "module",
   "bin": {
-    "resend": "./dist/main.js"
+    "resend": "dist/main.js"
   },
+  "files": ["dist"],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:integration": "vitest run --config vitest.integration.config.ts"
+    "test:integration": "vitest run --config vitest.integration.config.ts",
+    "prepublishOnly": "pnpm build && pnpm test"
   },
   "keywords": ["resend", "email", "cli"],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shubham-Rasal/resend-cli.git"
+  },
+  "homepage": "https://github.com/Shubham-Rasal/resend-cli#readme",
+  "bugs": {
+    "url": "https://github.com/Shubham-Rasal/resend-cli/issues"
+  },
   "engines": {
     "node": ">=18"
   },
