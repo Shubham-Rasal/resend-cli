@@ -51,8 +51,8 @@ export function setupEmailsCommands(program: Command): void {
         if (opts.text) payload.text = opts.text;
         if (opts.cc) payload.cc = opts.cc;
         if (opts.bcc) payload.bcc = opts.bcc;
-        if (opts.replyTo) payload.reply_to = opts.replyTo;
-        if (opts.scheduledAt) payload.scheduled_at = opts.scheduledAt;
+        if (opts.replyTo) payload.replyTo = opts.replyTo;
+        if (opts.scheduledAt) payload.scheduledAt = opts.scheduledAt;
         if (opts.tag) payload.tags = parseTags(opts.tag);
 
         const headers: Record<string, string> = {};
