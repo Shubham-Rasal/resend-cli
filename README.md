@@ -1,4 +1,10 @@
+
+
 # Resend CLI: An opinionated Resend email API client
+
+> [!WARNING]
+> The resend team released the official cli here and I recommend using it - https://github.com/resend/resend-cli
+
 
 CLI tool for [Resend](https://resend.com) with JSON output across all 29 commands. Designed for LLM agents, scripts, and humans who prefer structured data over dashboards.
 
